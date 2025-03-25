@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classical Music - Music World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-music logo-icon"></i>
+                <span class="logo-text" id="logotext">Music World</span>
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rock.html">Rock</a></li>
+                        <li><a href="jazz.html">Jazz</a></li>
+                        <li><a href="pop.html">Pop</a></li>
+                        <li><a href="rap.html">Rap</a></li>
+                        <li><a href="classical.html">Classical</a></li>
+                    </ul>
+                </li>
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="album.html">Album Release</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <!-- Add the search bar here -->
+                <li class="search-bar">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search..." name="query">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+                <li><button id="loginBtn" class="login-btn">Login</button></li>
+
+               <!-- Profile Section -->
+                <li class="profile" id="profileSection">
+                    <div id="profileIcon" class="profile-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <ul id="logoutMenu" class="logout-menu">
+                        <li><a href="#" id="logoutBtn">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="classical-hero">
+            <div class="genre-header">
+                <h1>Classical Music</h1>
+                <p>Experience the timeless elegance of orchestral masterpieces</p>
+            </div>
+        </section>
+
+        <section id="classical-content">
+            <div class="songs-container">
+                <h2>Popular Classical Pieces</h2>
+                <div class="songs-grid">
+                    <div class="music-card">
+                        <h3>Ankhon Mein</h3>
+                        <audio controls>
+                            <source src="Classical songs/Aankhon_Mein_Teri_Ajab_Si_Full_HD___K.K___Om_Shanti_Om___Shahrukh_Khan___Deepika_Padukone(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Classical songs/Aankhon_Mein_Teri_Ajab_Si_Full_HD___K.K___Om_Shanti_Om___Shahrukh_Khan___Deepika_Padukone(256k).mp3" class="download-btn" data-song="Aankhon_Mein_Teri_Ajab_Si_Full_HD___K.K___Om_Shanti_Om___Shahrukh_Khan___Deepika_Padukone(256k).mp3">Download</a>
+
+                    </div>
+                    <div class="music-card">
+                        <h3>Bulleya</h3>
+                        <audio controls>
+                            <source src="Classical songs/Bulleya___Full_Song___Sultan___Salman_Khan,_Anushka_Sharma___Papon___Vishal___Shekhar___Irshad_Kamil(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Classical songs/Bulleya___Full_Song___Sultan___Salman_Khan,_Anushka_Sharma___Papon___Vishal___Shekhar___Irshad_Kamil(256k).mp3" class="download-btn" data-song="Bulleya___Full_Song___Sultan___Salman_Khan,_Anushka_Sharma___Papon___Vishal___Shekhar___Irshad_Kamil(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>Dhoom Taana</h3>
+                        <audio controls>
+                            <source src="Classical songs/Dhoom_Taana_Full_HD_Video_Song_Om_Shanti_Om___Deepika_Padukone,_Shahrukh_Khan(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Classical songs/Dhoom_Taana_Full_HD_Video_Song_Om_Shanti_Om___Deepika_Padukone,_Shahrukh_Khan(256k).mp3" class="download-btn" data-song="Dhoom_Taana_Full_HD_Video_Song_Om_Shanti_Om___Deepika_Padukone,_Shahrukh_Khan(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>Kuchh Toh Log Kahenge</h3>
+                        <audio controls>
+                            <source src="Classical songs/Kuchh_Toh_Log_Kahenge_Song___4K_Ultra_HD___Rajesh_Khanna___Kishore_Kumar___Sharmila_Tagore(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Classical songs/Kuchh_Toh_Log_Kahenge_Song___4K_Ultra_HD___Rajesh_Khanna___Kishore_Kumar___Sharmila_Tagore(256k).mp3" class="download-btn" data-song="Kuchh_Toh_Log_Kahenge_Song___4K_Ultra_HD___Rajesh_Khanna___Kishore_Kumar___Sharmila_Tagore(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>Main Agar Kahoon</h3>
+                        <audio controls>
+                            <source src="Classical songs/LYRICAL__Main_Agar_Kahoon___Om_Shanti_Om___Shahrukh_Khan,Deepika_Padukone___Sonu_Nigam,Shreya_Ghosal(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Classical songs/LYRICAL__Main_Agar_Kahoon___Om_Shanti_Om___Shahrukh_Khan,Deepika_Padukone___Sonu_Nigam,Shreya_Ghosal(256k).mp3" class="download-btn" data-song="LYRICAL__Main_Agar_Kahoon___Om_Shanti_Om___Shahrukh_Khan,Deepika_Padukone___Sonu_Nigam,Shreya_Ghosal(256k).mp3">Download</a>
+                    </div>
+                     <div class="music-card">
+                        <h3>Mere Mehboob Qayamat Hogi</h3>
+                        <audio controls>
+                            <source src="Classical songs/Mere_Mehboob_Qayamat_Hogi___Original__-_Mr._X_In_Bombay_-_Kishore_Kumar_s_Greatest_Hits_-_Old_Songs(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Classical songs/Mere_Mehboob_Qayamat_Hogi___Original__-_Mr._X_In_Bombay_-_Kishore_Kumar_s_Greatest_Hits_-_Old_Songs(256k).mp3" class="download-btn" data-song="Mere_Mehboob_Qayamat_Hogi___Original__-_Mr._X_In_Bombay_-_Kishore_Kumar_s_Greatest_Hits_-_Old_Songs(256k).mp3">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-music logo-icon"></i>
+                    <span class="logo-text">Music World</span>
+                </div>
+                <p>Your ultimate destination for music discovery and entertainment.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Music World. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="classical.js"></script>
+    <script src="auth.js"></script>
+    <script defer src="search.js"></script>
+</body>
+</html>

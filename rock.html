@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Music - Music World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-music logo-icon"></i>
+                <span class="logo-text" id="logotext">Music World</span>
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rock.html">Rock</a></li>
+                        <li><a href="jazz.html">Jazz</a></li>
+                        <li><a href="pop.html">Pop</a></li>
+                        <li><a href="rap.html">Rap</a></li>
+                        <li><a href="classical.html">Classical</a></li>
+                    </ul>
+                </li>
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="album.html">Album Release</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <!-- Add the search bar here -->
+                <li class="search-bar">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search..." name="query">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+                <li><button id="loginBtn" class="login-btn">Login</button></li>
+
+               <!-- Profile Section -->
+                <li class="profile" id="profileSection">
+                    <div id="profileIcon" class="profile-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <ul id="logoutMenu" class="logout-menu">
+                        <li><a href="#" id="logoutBtn">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="rock-hero">
+            <div class="genre-header">
+                <h1>Rock Music</h1>
+                <p>Experience the power of electric guitars and drums</p>
+            </div>
+        </section>
+
+        <section id="rock-content">
+            <div class="songs-container">
+                <h2>Popular Rock Songs</h2>
+                <div class="songs-grid">
+                    <div class="music-card">
+                        <h3>Bad To The Bone</h3>
+                        <audio controls>
+                            <source src="rock songs/BAD_TO_THE_BONE(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="rock songs/BAD_TO_THE_BONE(256k).mp3" class="download-btn" data-song="BAD_TO_THE_BONE(256k).mp3">Download</a>
+<!-- update the download button like this in every category of the song -->
+
+                    </div>
+                    <div class="music-card">
+                        <h3>Livin' On A Prayer</h3>
+                        <audio controls>
+                            <source src="rock songs/Bon_Jovi_-_Livin__On_A_Prayer(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="rock songs/Bon_Jovi_-_Livin__On_A_Prayer(256k).mp3" class="download-btn" data-song="Bon_Jovi_-_Livin__On_A_Prayer(256k).mp3">Download</a>
+                        
+                    </div>
+                    <div class="music-card">
+                        <h3>Sweet Child O' Mine</h3>
+                        <audio controls>
+                            <source src="rock songs/Guns_N__Roses_-_Sweet_Child_O__Mine__Official_Music_Video_(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="rock songs/Guns_N__Roses_-_Sweet_Child_O__Mine__Official_Music_Video_(256k).mp3" class="download-btn" data-song="Guns_N__Roses_-_Sweet_Child_O__Mine__Official_Music_Video_(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>Eye Of The Tiger</h3>
+                        <audio controls>
+                            <source src="rock songs/Survivor_-_Eye_Of_The_Tiger__Official_HD_Video_(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="rock songs/Survivor_-_Eye_Of_The_Tiger__Official_HD_Video_(256k).mp3" class="download-btn" data-song="Survivor_-_Eye_Of_The_Tiger__Official_HD_Video_(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>Kashmir</h3>
+                        <audio controls>
+                            <source src="rock songs/Kashmir_-_Led_Zeppelin(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="rock songs/Kashmir_-_Led_Zeppelin(256k).mp3" class="download-btn" data-song="Kashmir_-_Led_Zeppelin(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>Steppenwolf</h3>
+                        <audio controls>
+                            <source src="rock songs/Steppenwolf_-_Born_To_Be_Wild(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="rock songs/Steppenwolf_-_Born_To_Be_Wild(256k).mp3" class="download-btn" data-song="Steppenwolf_-_Born_To_Be_Wild(256k).mp3">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-music logo-icon"></i>
+                    <span class="logo-text">Music World</span>
+                </div>
+                <p>Your ultimate destination for music discovery and entertainment.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Music World. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="rock.js"></script>
+    <script src="auth.js"></script>
+    <script defer src="search.js"></script>
+</body>
+</html>

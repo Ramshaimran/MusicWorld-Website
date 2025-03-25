@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rap Music - Music World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-music logo-icon"></i>
+                <span class="logo-text" id="logotext">Music World</span>
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rock.html">Rock</a></li>
+                        <li><a href="jazz.html">Jazz</a></li>
+                        <li><a href="pop.html">Pop</a></li>
+                        <li><a href="rap.html">Rap</a></li>
+                        <li><a href="classical.html">Classical</a></li>
+                    </ul>
+                </li>
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="album.html">Album Release</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <!-- Add the search bar here -->
+                <li class="search-bar">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search..." name="query">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+                <li><button id="loginBtn" class="login-btn">Login</button></li>
+
+               <!-- Profile Section -->
+                <li class="profile" id="profileSection">
+                    <div id="profileIcon" class="profile-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <ul id="logoutMenu" class="logout-menu">
+                        <li><a href="#" id="logoutBtn">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="rap-hero">
+            <div class="genre-header">
+                <h1>Rap Music</h1>
+                <p>Experience the rhythm and poetry of hip-hop culture</p>
+            </div>
+        </section>
+
+        <section id="rap-content">
+            <div class="songs-container">
+                <h2>Popular Rap Songs</h2>
+                <div class="songs-grid">
+                    <div class="music-card">
+                        <h3>Balli Aur Mein</h3>
+                        <audio controls>
+                            <source src="Rap songs/06._Balli_Aur_Mein_-_Talha_Anjum___Prod_by_Jokhay_(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Rap songs/06._Balli_Aur_Mein_-_Talha_Anjum___Prod_by_Jokhay_(256k).mp3" class="download-btn" data-song="06._Balli_Aur_Mein_-_Talha_Anjum___Prod_by_Jokhay_(256k).mp3">Download</a>
+                        
+                    </div>
+                    <div class="music-card">
+                        <h3>Afsanay</h3>
+                        <audio controls>
+                            <source src="Rap songs/AFSANAY_-_Young_Stunners___Talhah_Yunus___Talha_Anjum___Prod._By_Jokhay__Official_Music_Video_(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Rap songs/AFSANAY_-_Young_Stunners___Talhah_Yunus___Talha_Anjum___Prod._By_Jokhay__Official_Music_Video_(256k).mp3" class="download-btn" data-song="AFSANAY_-_Young_Stunners___Talhah_Yunus___Talha_Anjum___Prod._By_Jokhay__Official_Music_Video_(256k).mp3">Download</a>
+                        
+                    </div>
+                    <div class="music-card">
+                        <h3>Agency</h3>
+                        <audio controls>
+                            <source src="Rap songs/Agency_-_Talha_Anjum___Rap_Demon___Prod._by_UMAIR__Official_Lyric_Video_(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Rap songs/Agency_-_Talha_Anjum___Rap_Demon___Prod._by_UMAIR__Official_Lyric_Video_(256k).mp3" class="download-btn" data-song="Agency_-_Talha_Anjum___Rap_Demon___Prod._by_UMAIR__Official_Lyric_Video_(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>Downers At Dusk</h3>
+                        <audio controls>
+                            <source src="Rap songs/Downers_At_Dusk_-_Talha_Anjum___Prod._by_Umair__Official_Music_Video_(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Rap songs/Downers_At_Dusk_-_Talha_Anjum___Prod._by_Umair__Official_Music_Video_(256k).mp3" class="download-btn" data-song="Downers_At_Dusk_-_Talha_Anjum___Prod._by_Umair__Official_Music_Video_(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>Gumaan</h3>
+                        <audio controls>
+                            <source src="Rap songs/GUMAAN_-_Young_Stunners___Talha_Anjum___Talhah_Yunus___Prod._By_Jokhay__Official_Music_Video_(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Rap songs/GUMAAN_-_Young_Stunners___Talha_Anjum___Talhah_Yunus___Prod._By_Jokhay__Official_Music_Video_(256k).mp3" class="download-btn" data-song="GUMAAN_-_Young_Stunners___Talha_Anjum___Talhah_Yunus___Prod._By_Jokhay__Official_Music_Video_(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>Kaun Talha</h3>
+                        <audio controls>
+                            <source src="Rap songs/Talha_Anjum_-_Kaun_Talha___Prod._by_Umair__Official_Audio_(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Rap songs/Talha_Anjum_-_Kaun_Talha___Prod._by_Umair__Official_Audio_(256k).mp3" class="download-btn" data-song="Talha_Anjum_-_Kaun_Talha___Prod._by_Umair__Official_Audio_(256k).mp3">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-music logo-icon"></i>
+                    <span class="logo-text">Music World</span>
+                </div>
+                <p>Your ultimate destination for music discovery and entertainment.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Music World. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+    <script src="rap.js"></script>
+    <script src="auth.js"></script>
+    <script defer src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazz Music - Music World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-music logo-icon"></i>
+                <span class="logo-text" id="logotext">Music World</span>
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rock.html">Rock</a></li>
+                        <li><a href="jazz.html">Jazz</a></li>
+                        <li><a href="pop.html">Pop</a></li>
+                        <li><a href="rap.html">Rap</a></li>
+                        <li><a href="classical.html">Classical</a></li>
+                    </ul>
+                </li>
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="album.html">Album Release</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <!-- Add the search bar here -->
+                <li class="search-bar">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search..." name="query">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+                <li><button id="loginBtn" class="login-btn">Login</button></li>
+
+               <!-- Profile Section -->
+                <li class="profile" id="profileSection">
+                    <div id="profileIcon" class="profile-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <ul id="logoutMenu" class="logout-menu">
+                        <li><a href="#" id="logoutBtn">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="jazz-hero">
+            <div class="genre-header">
+                <h1>Jazz Music</h1>
+                <p>Experience the smooth rhythms and improvisational magic of jazz</p>
+            </div>
+        </section>
+
+        <section id="jazz-content">
+            <div class="content-container">
+            </div>
+            <div class="songs-container">
+                <h2>Popular Jazz Songs</h2>
+                <div class="songs-grid">
+                    <div class="music-card">
+                        <h3>All At Sea</h3>
+                        <audio controls>
+                            <source src="Jazz songs/Jamie_Cullum_-_All_At_Sea(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Jazz songs/Jamie_Cullum_-_All_At_Sea(256k).mp3" class="download-btn" data-song="Jamie_Cullum_-_All_At_Sea(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>I'm All Over It</h3>
+                        <audio controls>
+                            <source src="Jazz songs/Jamie_Cullum_-_I_m_All_Over_it(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Jazz songs/Jamie_Cullum_-_I_m_All_Over_it(256k).mp3" class="download-btn" data-song="Jamie_Cullum_-_I_m_All_Over_it(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>Mind Trick</h3>
+                        <audio controls>
+                            <source src="Jazz songs/Jamie_Cullum_-_Mind_Trick(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Jazz songs/Jamie_Cullum_-_Mind_Trick(256k).mp3" class="download-btn" data-song="Jamie_Cullum_-_Mind_Trick(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>Pure Imagination</h3>
+                        <audio controls>
+                            <source src="Jazz songs/Jamie_Cullum_-_Pure_Imagination(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Jazz songs/Jamie_Cullum_-_Pure_Imagination(256k).mp3" class="download-btn" data-song="Jamie_Cullum_-_Pure_Imagination(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>What A Difference </h3>
+                        <audio controls>
+                            <source src="Jazz songs/Jamie_Cullum_-_What_A_Difference_A_Day_Made__Live_At_Blenheim_Palace_(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Jazz songs/Jamie_Cullum_-_What_A_Difference_A_Day_Made__Live_At_Blenheim_Palace_(256k).mp3" class="download-btn" data-song="Jamie_Cullum_-_What_A_Difference_A_Day_Made__Live_At_Blenheim_Palace_(256k).mp3">Download</a>
+                    </div>
+                    <div class="music-card">
+                        <h3>Wind Cries Mary</h3>
+                        <audio controls>
+                            <source src="Jazz songs/Jamie_Cullum_-_Wind_Cries_Mary(256k).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="Jazz songs/Jamie_Cullum_-_Wind_Cries_Mary(256k).mp3" class="download-btn" data-song="Jamie_Cullum_-_Wind_Cries_Mary(256k).mp3">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-music logo-icon"></i>
+                    <span class="logo-text">Music World</span>
+                </div>
+                <p>Your ultimate destination for music discovery and entertainment.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Music World. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="jazz.js"></script>
+    <script src="auth.js"></script>
+    <script defer src="search.js"></script>
+</body>
+</html>
