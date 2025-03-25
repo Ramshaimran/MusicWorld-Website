@@ -26,7 +26,7 @@ cd MusicWorld-Website
 Open index.html in a browser to explore the website.
 
 # Screenshots
-![alt text](screenshot.png)
+screenshot.png
 
 # Contributing
 We welcome contributions! If you have ideas to improve the design, features, or performance, feel free to submit a pull request.
