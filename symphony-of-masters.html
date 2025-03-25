@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symphony of Masters - Music World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="artists.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-music logo-icon"></i>
+                <span class="logo-text" id="logotext">Music World</span>
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rock.html">Rock</a></li>
+                        <li><a href="jazz.html">Jazz</a></li>
+                        <li><a href="pop.html">Pop</a></li>
+                        <li><a href="rap.html">Rap</a></li>
+                        <li><a href="classical.html">Classical</a></li>
+                    </ul>
+                </li>
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="album.html">Album Release</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <!-- Add the search bar here -->
+                <li class="search-bar">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search..." name="query">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+                <li><button id="loginBtn" class="login-btn">Login</button></li>
+
+               <!-- Profile Section -->
+                <li class="profile" id="profileSection">
+                    <div id="profileIcon" class="profile-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <ul id="logoutMenu" class="logout-menu">
+                        <li><a href="#" id="logoutBtn">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="artists-showcase">
+            <h1>Symphony of Masters</h1>
+            <div class="artists-container">
+                <div class="artist-box">
+                    <div class="artist-image">
+                        <img src="beethoven.jpg" alt="Ludwig van Beethoven">
+                    </div>
+                    <div class="artist-info">
+                        <h2>Ludwig van Beethoven</h2>
+                        <p class="artist-genre">Classical / Romantic Era</p>
+                        <p class="artist-bio">A German composer and pianist, Beethoven was a crucial figure in the transition between the Classical and Romantic eras in music. He remains one of the most recognized and influential musicians of all time.</p>
+                        <div class="artist-achievements">
+                            <h3>Notable Works:</h3>
+                            <ul>
+                                <li>Symphony No. 5 in C minor</li>
+                                <li>Symphony No. 9 "Choral"</li>
+                                <li>Moonlight Sonata</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artist-box">
+                    <div class="artist-image">
+                        <img src="mozart.jpg" alt="Wolfgang Amadeus Mozart">
+                    </div>
+                    <div class="artist-info">
+                        <h2>Wolfgang Amadeus Mozart</h2>
+                        <p class="artist-genre">Classical Era</p>
+                        <p class="artist-bio">An Austrian composer of the Classical period, Mozart showed prodigious ability from his earliest childhood. His influence on Western art music is profound.</p>
+                        <div class="artist-achievements">
+                            <h3>Notable Works:</h3>
+                            <ul>
+                                <li>The Marriage of Figaro</li>
+                                <li>Symphony No. 40</li>
+                                <li>Requiem Mass in D minor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artist-box">
+                    <div class="artist-image">
+                        <img src="bach.jpg" alt="Johann Sebastian Bach">
+                    </div>
+                    <div class="artist-info">
+                        <h2>Johann Sebastian Bach</h2>
+                        <p class="artist-genre">Baroque Era</p>
+                        <p class="artist-bio">A German composer and musician of the Baroque period, Bach's works are known for their intellectual depth, technical command, and artistic beauty.</p>
+                        <div class="artist-achievements">
+                            <h3>Notable Works:</h3>
+                            <ul>
+                                <li>The Well-Tempered Clavier</li>
+                                <li>Mass in B minor</li>
+                                <li>Brandenburg Concertos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artist-box">
+                    <div class="artist-image">
+                        <img src="tchaikovsky.jpg" alt="Pyotr Ilyich Tchaikovsky">
+                    </div>
+                    <div class="artist-info">
+                        <h2>Pyotr Ilyich Tchaikovsky</h2>
+                        <p class="artist-genre">Romantic Era</p>
+                        <p class="artist-bio">A Russian composer of the Romantic period, Tchaikovsky's works are among the most popular music in the classical repertoire. His compositions combine Russian elements with Western European techniques.</p>
+                        <div class="artist-achievements">
+                            <h3>Notable Works:</h3>
+                            <ul>
+                                <li>The Nutcracker Ballet</li>
+                                <li>Symphony No. 6 "Pathétique"</li>
+                                <li>1812 Overture</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-music logo-icon"></i>
+                    <span class="logo-text">Music World</span>
+                </div>
+                <p>Your ultimate destination for music discovery and entertainment.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Music World. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script defer src="search.js"></script>
+<script src="auth.js"></script>
+<script src="script.js"></script>
