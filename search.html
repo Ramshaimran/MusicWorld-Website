@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-music logo-icon"></i>
+                <span class="logo-text" id="logotext">Music World</span>
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rock.html">Rock</a></li>
+                        <li><a href="jazz.html">Jazz</a></li>
+                        <li><a href="pop.html">Pop</a></li>
+                        <li><a href="rap.html">Rap</a></li>
+                        <li><a href="classical.html">Classical</a></li>
+                    </ul>
+                </li>
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="album.html">Album Release</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <!-- Add the search bar here -->
+                <li class="search-bar">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search..." name="query">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+                <li><button id="loginBtn" class="login-btn">Login</button></li>
+
+               <!-- Profile Section -->
+                <li class="profile" id="profileSection">
+                    <div id="profileIcon" class="profile-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <ul id="logoutMenu" class="logout-menu">
+                        <li><a href="#" id="logoutBtn">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Search Results</h1>
+        <p id="resultCount"></p>
+        <div id="searchResults" class="music-grid"></div> <!-- Results in grid layout -->
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-music logo-icon"></i>
+                    <span class="logo-text">Music World</span>
+                </div>
+                <p>Your ultimate destination for music discovery and entertainment.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Music World. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script defer src="search.js"></script>
+    <script src="auth.js"></script>
+ 
+</body>
+</html>

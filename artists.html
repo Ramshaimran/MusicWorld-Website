@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Artists - Music World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="artists.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-music logo-icon"></i>
+                <span class="logo-text" id="logotext">Music World</span>
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rock.html">Rock</a></li>
+                        <li><a href="jazz.html">Jazz</a></li>
+                        <li><a href="pop.html">Pop</a></li>
+                        <li><a href="rap.html">Rap</a></li>
+                        <li><a href="classical.html">Classical</a></li>
+                    </ul>
+                </li>
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="album.html">Album Release</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <!-- Add the search bar here -->
+                <li class="search-bar">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search..." name="query">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+                <li><button id="loginBtn" class="login-btn">Login</button></li>
+
+               <!-- Profile Section -->
+                <li class="profile" id="profileSection">
+                    <div id="profileIcon" class="profile-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <ul id="logoutMenu" class="logout-menu">
+                        <li><a href="#" id="logoutBtn">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="artists-showcase">
+            <h1>Symphony of Masters</h1>
+            <div class="artists-container">
+                <div class="artist-box">
+                    <div class="artist-image">
+                        <img src="images/ed-sheeran.jpg" alt="Ed Sheeran">
+                    </div>
+                    <div class="artist-info">
+                        <h2>Ed Sheeran</h2>
+                        <p class="artist-genre">Pop / Folk Pop</p>
+                        <p class="artist-bio">Ed Sheeran is a Grammy-winning British singer-songwriter known for his unique blend of pop, folk, and hip-hop influences. His honest lyrics and acoustic-driven sound have made him one of the world's best-selling music artists.</p>
+                        <div class="artist-achievements">
+                            <h3>Notable Achievements:</h3>
+                            <ul>
+                                <li>Multiple Grammy Awards winner</li>
+                                <li>"Shape of You" - Most streamed song on Spotify</li>
+                                <li>Over 150 million records sold worldwide</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artist-box">
+                    <div class="artist-image">
+                        <img src="images/weekend.webp" alt="The Weeknd">
+                    </div>
+                    <div class="artist-info">
+                        <h2>The Weeknd</h2>
+                        <p class="artist-genre">R&B / Pop</p>
+                        <p class="artist-bio">The Weeknd is a Canadian singer-songwriter who has revolutionized modern R&B with his dark, atmospheric sound and emotive vocals. His unique style blends R&B, pop, and alternative elements.</p>
+                        <div class="artist-achievements">
+                            <h3>Notable Achievements:</h3>
+                            <ul>
+                                <li>Multiple Billboard Hot 100 #1 hits</li>
+                                <li>Super Bowl LV Halftime Show performer</li>
+                                <li>"Blinding Lights" - Billboard's #1 Hot 100 song of all time</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artist-box">
+                    <div class="artist-image">
+                        <img src="images/talha anjum.jpg" alt="Talha Anjum">
+                    </div>
+                    <div class="artist-info">
+                        <h2>Talha Anjum</h2>
+                        <p class="artist-genre">Hip-Hop / Rap</p>
+                        <p class="artist-bio">Talha Anjum is a pioneering figure in Pakistan's hip-hop scene, known for his intricate wordplay and thought-provoking lyrics. As a member of Young Stunners, he has helped shape the country's rap landscape.</p>
+                        <div class="artist-achievements">
+                            <h3>Notable Achievements:</h3>
+                            <ul>
+                                <li>Breakthrough artist in South Asian hip-hop</li>
+                                <li>Multiple viral hits on YouTube</li>
+                                <li>Revolutionized Urdu rap with unique storytelling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artist-box">
+                    <div class="artist-image">
+                        <img src="images/jamie cullum.jpg" alt="Jamie Cullum">
+                    </div>  
+                    <div class="artist-info">
+                        <h2>Jamie Cullum</h2>
+                        <p class="artist-genre">Jazz / Pop Jazz</p>
+                        <p class="artist-bio">Jamie Cullum is a British jazz-pop singer-songwriter known for his dynamic live performances and innovative approach to jazz standards. His music bridges the gap between traditional jazz and contemporary pop.</p>
+                        <div class="artist-achievements">
+                            <h3>Notable Achievements:</h3>
+                            <ul>
+                                <li>Grammy nominated artist</li>
+                                <li>Best-selling UK jazz artist of all time</li>
+                                <li>Successful BBC Radio 2 jazz show host</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artist-box">
+                    <div class="artist-image">
+                        <img src="images/zain-malik.png" alt="Zayn Malik">
+                    </div>
+                    <div class="artist-info">
+                        <h2>Zayn Malik</h2>
+                        <p class="artist-genre">Pop / R&B</p>
+                        <p class="artist-bio">Zayn Malik is a British singer and songwriter who gained fame as a member of the boy band One Direction. He has since established a successful solo career with his unique sound and style.</p>
+                        <div class="artist-achievements">
+                            <h3>Notable Achievements:</h3>
+                            <ul>
+                                <li>Multiple Billboard Hot 100 hits</li>
+                                <li>Grammy-nominated artist</li>
+                                <li>Debut album "Mind of Mine" debuted at #1 on Billboard 200</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-music logo-icon"></i>
+                    <span class="logo-text">Music World</span>
+                </div>
+                <p>Your ultimate destination for music discovery and entertainment.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Music World. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script defer src="search.js"></script>
+</body>
+</html>

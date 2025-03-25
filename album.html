@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Albums</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-music logo-icon"></i>
+                <span class="logo-text" id="logotext">Music World</span>
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rock.html">Rock</a></li>
+                        <li><a href="jazz.html">Jazz</a></li>
+                        <li><a href="pop.html">Pop</a></li>
+                        <li><a href="rap.html">Rap</a></li>
+                        <li><a href="classical.html">Classical</a></li>
+                    </ul>
+                </li>
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="album.html">Album Release</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <!-- Add the search bar here -->
+                <li class="search-bar">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search..." name="query">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+                <li><button id="loginBtn" class="login-btn">Login</button></li>
+
+               <!-- Profile Section -->
+                <li class="profile" id="profileSection">
+                    <div id="profileIcon" class="profile-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <ul id="logoutMenu" class="logout-menu">
+                        <li><a href="#" id="logoutBtn">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="albums-head">
+
+        <h1>Upcoming Albums</h1>
+    </section>
+    <div class="albums-container">
+        <div class="album-box">
+            <img src="images/album_1.png" alt="Album 1">
+            <h2>Dream Theater  Parasomnia</h2>
+            <p>Set to release on February 7, 2025, this marks Dream Theater's 16th studio album and the return of original drummer Mike Portnoy since 2009.</p>
+        </div>
+        <div class="album-box">
+            <img src="images/album_2.png" alt="Album 2">
+            <h2>The Lumineers  Automatic</h2>
+            <p>Expected on February 14, 2025, The Lumineers' latest album continues their signature indie folk and indie pop sound.</p>
+        </div>
+        <div class="album-box">
+            <img src="images/album_3.png" alt="Album 3">
+            <h2>Lady Gaga  Mayhem</h2>
+            <p>Expected on February 21, 2025, Lady Gaga's 11th studio album, Mayhem, is set to release.</p> 
+        </div>
+        <div class="album-box">
+            <img src="images/album_4.png" alt="Album 4">
+            <h2>Japanese Breakfast  For Melancholy Brunettes (and Sad Women)</h2>
+            <p>Expected on February 28, 2025, Japanese Breakfast's 11th studio album, For Melancholy Brunettes (and Sad Women), is set to release.</p>
+        </div>
+        <div class="album-box">
+            <img src="images/album_5.png" alt="Album 5">
+            <h2>Lana Del Rey  The Right Person Will Stay</h2>
+            <p>Expected on March 4, 2025, Lana Del Rey's 11th studio album, The Right Person Will Stay, is set to release.</p>
+        </div>
+        <div class="album-box">
+            <img src="images/album_6.png" alt="Album 6">
+            <h2>Imma Be Your Pokémon" by Badshah</h2>
+            <p>Expected on March 11, 2025, Badshah's 11th studio album, Imma Be Your Pokémon, is set to release.</p>
+        </div>
+        <div class="album-box">
+            <img src="images/album_7.png" alt="Album 7">
+            <h2>Khwabeeda" by AT Azaad</h2>
+            <p>Expected on March 18, 2025, AT Azaad's 11th studio album, Khwabeeda, is set to release.</p>
+        </div>
+        <div class="album-box">
+            <img src="images/album_8.png" alt="Album 8">
+            <h2>Salim Sulaiman  Bhoomi 2025</h2>
+            <p>Expected on March 25, 2025, Salim Sulaiman's 11th studio album, Bhoomi 2025, is set to release.</p>
+        </div>
+        <div class="album-box">
+            <img src="images/album_9.png" alt="Album 9">
+            <h2>Arijit Singh  Soulful Strings</h2>
+            <p>Expected on April 1, 2025, Arijit Singh's 11th studio album, Soulful Strings, is set to release.</p>
+        </div>
+        <div class="album-box">
+            <img src="images/album_10.png" alt="Album 10">
+            <h2>Ankhiyan</h2>
+            <p>Expected on April 8, 2025, Ankit Tiwari's 11th studio album, Aankh Marey, is set to release.</p>
+        </div>
+        <div class="album-box">
+            <img src="images/album_11.png" alt="Album 11">
+            <h2>Shreya Ghoshal  Melodic Moods</h2>
+            <p>Expected on April 15, 2025, Shreya Ghoshal's 11th studio album, Melodic Moods, is set to release.</p>
+        </div>
+        <div class="album-box">
+            <img src="images/album_12.png" alt="Album 12">
+            <h2>Shankar Ehsaan Loy  Harmonic Fusion</h2>
+            <p>Expected on April 22, 2025, Shankar Ehsaan Loy's 11th studio album, Harmonic Fusion, is set to release.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script defer src="search.js"></script>
+</body>
+</html>

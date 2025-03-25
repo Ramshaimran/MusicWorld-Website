@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="navbar.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-music logo-icon"></i>
+                <span class="logo-text" id="logotext">Music World</span>
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rock.html">Rock</a></li>
+                        <li><a href="jazz.html">Jazz</a></li>
+                        <li><a href="pop.html">Pop</a></li>
+                        <li><a href="rap.html">Rap</a></li>
+                        <li><a href="classical.html">Classical</a></li>
+                    </ul>
+                </li>
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="album.html">Album Release</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <!-- Add the search bar here -->
+                <li class="search-bar">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search..." name="query">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+                <li><button id="loginBtn" class="login-btn">Login</button></li>
+
+               <!-- Profile Section -->
+                <li class="profile" id="profileSection">
+                    <div id="profileIcon" class="profile-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <ul id="logoutMenu" class="logout-menu">
+                        <li><a href="#" id="logoutBtn">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login to Music World</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+                <p class="form-footer">
+                    Don't have an account? <a href="#" id="signupLink">Sign up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <section id="hero">
+            <div class="welcome-text">
+                <h1 class="slide-in">Welcome to Music World</h1>
+                <p class="slide-in delayed">Discover, Listen, and Share Your Favorite Music</p>
+            </div>
+        </section>
+
+        <section id="trending">
+            <h2>Categories</h2>
+            <div class="music-grid">
+                <div class="music-card">
+                    <img src="assets/images/rock/rock-category.jpg" alt="Rock Music">
+                    <h3>Rock</h3>
+                    <p>Experience the power of electric guitars and drums</p>
+                    <a href="rock.html" class="explore-btn">
+                        <span>Explore Rock</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="music-card">
+                    <img src="assets/images/jazz/jazz-category.jpg" alt="Jazz Music">
+                    <h3>Jazz</h3>
+                    <p>Discover smooth rhythms and improvisational magic</p>
+                    <a href="jazz.html" class="explore-btn">
+                        <span>Explore Jazz</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="music-card">
+                    <img src="assets/images/pop/pop-category.jpg" alt="Pop Music">
+                    <h3>Pop</h3>
+                    <p>Chart-topping hits and catchy melodies</p>
+                    <a href="pop.html" class="explore-btn">
+                        <span>Coming Soon</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="top-artists">
+            <h2>Top Artists</h2>
+            <div class="artists-grid">
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="images/ed-sheeran.jpg" alt="Ed Sheeran">
+                    </div>
+                    <div class="artist-card-body">
+                        <h3>Ed Sheeran</h3>
+                        <p>15M+ Monthly Listeners</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="images/zain-malik.png" alt="Zayn Malik">
+                    </div>
+                    <h3>Zayn Malik</h3>
+                    <p>20M+ Monthly Listeners</p>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="images/weekend.webp" alt="The Weeknd">
+                    </div>
+                    <h3>The Weeknd</h3>
+                    <p>18M+ Monthly Listeners</p>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="images/talha anjum.jpg" alt="Talha Anjum - Pakistani Rapper">
+                    </div>
+                    <h3>Talha Anjum</h3>
+                    <p>10M+ Monthly Listeners</p>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="images/jamie cullum.jpg" alt="Jamie Cullum - Jazz Artist">
+                    </div>
+                    <h3>Jamie Cullum</h3>
+                    <p>8M+ Monthly Listeners</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-music logo-icon"></i>
+                    <span class="logo-text">Music World</span>
+                </div>
+                <p>Your ultimate destination for music discovery and entertainment.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Music World. All rights reserved.</p>
+        </div>
+    </footer>
+    <script defer src="search.js"></script>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
